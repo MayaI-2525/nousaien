@@ -2,125 +2,260 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <!--メディアクエリ-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"> <!--リセット-->
-    <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <!--フォント-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Klee+One:wght@400;600&family=Noto+Sans+Display:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
     <!--表示名-->
-    <title>井野農菜園-TOP</title>
+    <title>井野農菜園-生産者</title>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "井野農菜園-生産者",
+    "url": "https://ino-agrigarden.com/",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "阿蘇郡南小国町満願寺",
+        "addressRegion": "熊本県",
+        "postalCode": "869-2402",
+        "streetAddress": "7776",
+        "addressCountry": "JP"
+        }
+    } 
+ </script>
 </head>
-<body>
-    <header>
-        <div class="headerback">
-            <div class="header-logo">
-                <h1><a href="#">井野農菜園</a></h1>
+
+<body><!--ここから表示部分-->
+
+<header>
+    <nav class="index-nav subpage-index-nav">
+        <div class="nav-left"> <!--　ナビゲーション左　-->
+            <div class="link-around">
+                <a href=".//goods.html" class="link">            
+                    <img src="./picture/illust/icon-tomato.png">
+                    <p>商品一覧</p>
+                </a>       
             </div>
-            <div class="header-contents">
-                <p class="other">
-                    <a href="nousaien.html">TOP</a></p>
-                <p class="other">
-                    <a href="./nousaien.html#news">NEWS</a></p>
-                <p class="other">
-                    <a href="begitable.html">商品</a></p>
-                <p class="nowpage">
-                    <a href="producer.html">生産者</a></p>
+            <div class="link-around">
+                <a href="./news.html" class="link">
+                    <img src="./picture/illust/icon-news.png">
+                    <p>最新情報</p>
+                </a>
             </div>
         </div>
-    </header>
-
-    <main>
-        <div class="producer-back">
-
-            <div class="circles"> <!--丸装飾-->
-                <div class="circle1"></div>
-                <div class="circle2"></div>
+        <div class="nav-right"><!--　ナビゲーション右　-->
+            <div class="link-around">
+                <a href="./producer.html" class="link">
+                    <img src="./picture/illust/icon-scop.png">
+                    <p>生産者</p>
+                </a>
             </div>
+            <div class="link-around">
+                <a href="#" class="link">
+                    <img src="./picture/illust/icon-mail.png">
+                    <p>お問い合わせ</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <a class="mainLogo subpage-mainlogo" href="./index.html">
+        <div>
+            <img class="mainlogomark subpage-mainlogomark" src="./picture/illust/titlelogomark.png"><img class="mainlogotext subpage-mainlogotext" src="./picture/illust/井野農菜園2_green.png">
+        </div>
+    </a>
+
+    <!--７００px以下ハンバーガーメニュー-->
+    <button type="button" class="menu-btn">
+        <span class="menu-btn-line">    <span></span>   </span>
+    </button>
+    <nav id="humbergermenu-box">
+        <div>
+            <button type="button" class="back-btn">✕</button>
+        </div>
+        <a class="humberger_menu_list" href="./index.html">TOP</a>
+        <a class="humberger_menu_list" href="./goods.html">商品一覧</a>
+        <a class="humberger_menu_list" href="./news.html">最新情報</a>
+        <a class="humberger_menu_list" href="./producer.html">生産者</a>
+        <a class="humberger_menu_list list_last" href="#contact">お問い合わせ</a>
+    </nav>
+</header>
+
+<main>
+    <div class="subpage-back-white">
+        <div class="sub-produce-top">
+            <div class="sub-produce-top-comment">
+                <div class="sub-produce-top-comment-big">
+                    井野さんとこの<br>
+                    <span>トマト</span>じゃないと<br>
+                    子供が食べない
+                </div>
+                <div class="sub-produce-top-comment-mini">
+                    と言っていただける、自慢の甘さ
+                </div>
+            </div>
+            <div class="subpage-wave-white"></div>
+        </div>
+
+        <div class="sub-produce-comment-back">
             
-            <div class="producer-contents">
-                <div class="producer-title">
-                    <h1 class="title">生産者について</h1>
-                    <div class="underbar3"></div>
+            <div class="sub-produce-comment">
+                <div class="producer-title-box">
+                    <p class="producer-title">生産者より</p>
+                    <p class="producer-subtitle">Message</p>
                 </div>
-                <div class="producer-top">
-                    <h1>
-                        <span>井野さんちのトマト<br>
-                        じゃないと<br>
-                        子供が食べない！</span><br>
-                        と言っていただけています。
-                    </h1>
-                    <p>
-                        <img src="./image/suke_yoko - 編集済み.jpg">
-                    </p>
-                </div>
-                <div class="producer-comment">
-                    <div><img src="./image/suke_setumei - 編集済み.jpg"></div>
-                    <div class="producer-comment-txt">
-                        <h2>生産者からのコメント</h2>
-                        <p>＊＊＊＊＊＊＊編集中＊＊＊＊＊＊</p>
+                <div class="sub-produce-comment-circle1"><!--丸--></div>
+                <div class="sub-produce-comment-textbox">
+                    <div class="sub-produce-comment-text">
+                        当園は筑後川源流を湛え小国杉の山々に囲まれた南小国町に位置しています。<br>
+                        数百年続く農家の家系を継ぎ、私の代から屋号を「井野農菜園」にあらため、トマトと稲作、野菜苗の育苗の３本柱で営農しています。<br>
+                        代名詞でもあるトマトは、町内の学校・保育園の給食をはじめ、旅館や飲食店での使用など地域から根強い支持をいただいており、また学生時代から開発を進めてきた規格外トマトの加工品活用も経営に取り入れ、自社での６次化にも取り組んでいます。
+                    </div>
+                    <div class="sub-produce-comment-img">
+                        <div class="sub-produce-comment-circle2"><!--丸--></div>
+                        <img src="./picture/suke_setumei.jpeg">
                     </div>
                 </div>
-
-                <div class="producer-history">
-                    <div class="pHistory-contents">
-                        <h1 class="historyTitle">
-                            経歴
-                        </h1>
-                        <p class="historyList">
-                            <ul class="listStyle">
-                                <li>2015　阿蘇中央高校　農業食品科　野菜コース卒業</li>
-                                <li>2017　熊本農大　農産園芸学科　農特産コース卒業</li>
-                                <li>20**　本格的に家業を継ぐ</li>
-                                <br>
-                                <li>小国郷一志会（阿蘇4H単位クラブ）会長</li>
-                                <li>南小国町今後の農業を考える会協議会役員</li>
-                                <li>農カードメンバー　No.161</li>
-                                <li>農家ハンターメンバー（予定）</li>
-                            </ul>
-                        </p>
-                    </div>
-
-                    <div class="pHistory-contents">
-                        <h1 class="historyTitle">所持資格</h1>
-                        <p class="historyList">
-                            <ul class="listStyle">
-                                <li>大型特殊&けん引（農耕車）</li>
-                                <li>小型ボイラー取扱技能講習修了</li>
-                                <li>小型車両系建設機械特別教育修了</li>
-                                <li>アーク溶接特別教育修了</li>
-                                <li>食品衛生責任者</li>
-                                <li>密封包装食品製造許可</li>
-                                <li>第一種銃猟免許</li>
-                            </ul>
-                        </p>
-                    </div>
-
-                    <div class="pHistory-contents">
-                        <h1 class="historyTitle">受賞歴</h1>
-                        <p class="historyList">
-                            <ul class="listStyle">
-                                <li>阿蘇世界農業遺産ビジネスプランコンテスト学生の部　最優秀賞2014</li>
-                                <li>熊本県青年農業者会議　生活部門　優賞（2019）</li>
-                                <li>熊本県青年農業者会議　生活部門　優賞（2020）</li>
-                                <li>熊本県青年農業者会議　意見発表部門　優賞（2021）</li>
-                            </ul>
-                        </p>
-                    </div>      
-
-                </div>
-            </div>  
-
-            <div class="circles"> <!--丸装飾-->
-                <div class="circle3"></div>
-                <div class="circle4"></div>
             </div>
-
-        </div>    
-    </main>
-    
-    <footer>
-        <div class="foot-contents">
-            <h1>2024 Maya Ino</h1>
         </div>
-    </footer>
+    </div>
+
+    <div class="subpage-wave"></div>
+
+    <div class="subpage-back">
+        <div class="sub-produce-history">
+            <div class="sub-produce-history-box">
+                <h2 class="history-title">経歴</h2>
+                <ul class="sub-produce-history-box-nonelist">
+                    <li>2015　阿蘇中央高校　農業食品科　野菜コース卒業</li>
+                    <li>2017　熊本農大　農産園芸学科　農特産コース卒業</li>
+                    <li>本格的に継ぐ</li>
+                </ul>
+                <ul class="sub-produce-history-box-dodlist">
+                    <li>小国郷一志会（阿蘇4H単位クラブ）会長</li>
+                    <li>農カードメンバー　No.161</li>
+                    <li>農家ハンターメンバー</li>
+                </ul>                    
+            </div>
+            <div class="sub-produce-history-box">
+                <h2 class="history-title">所持資格</h2>
+                <ul class="sub-produce-history-box-dodlist">
+                    <li>大型特殊&けん引（農耕車）</li>
+                    <li>小型ボイラー取扱技能講習修了</li>
+                    <li>小型車両系建設機械特別教育修了</li>
+                    <li>アーク溶接特別教育修了</li>
+                    <li>第一種銃猟免許</li>
+                    <li>食品衛生責任者</li>
+                    <li>密封包装食品製造許可</li>
+                </ul>
+            </div>
+            <div class="sub-produce-history-box">
+                <h2 class="history-title">受賞歴</h2>
+                <ul class="sub-produce-history-box-dodlist">
+                    <li>
+                        阿蘇世界農業遺産ビジネスプランコンテスト<br>
+                        <ul class="sub-produce-history-box-nonelist2">
+                            <li>学生の部　最優秀賞2014</li>
+                        </ul>
+                    </li>
+                    <li>
+                        熊本県青年農業者会議
+                        <ul class="sub-produce-history-box-nonelist2">
+                            <li>生活部門　優賞2019</li>
+                            <li>生活部門　優賞2020</li>
+                            <li>意見発表部門　優賞2021</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactform">
+        <div class="contactform-around">
+            <h2>CONTACT</h2>
+            <div class="contactform-links">
+                <a href="#"  class="contactform-google formcustum">
+                    <div>                    
+                        <p>Googleフォーム</p>                        
+                    </div>
+                </a>
+                <a href="mailto:inoagrigarden@gmail.com"  class="contactform-mail formcustum">
+                    <div>
+                        <p>メールにて<br>お問い合わせ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<!--ーーーーーーーーーー　フッター　ーーーーーーーーーー-->
+<footer>
+    <div class="footerMenu">
+        <div class="footerMenu-icon">
+            <img src="./picture/illust/titleLogo.png">
+            <p>
+                阿蘇南小国の山奥で代々農業を営んでいます。
+                みなさまの生活に色どりを添えられるような作物・商品を
+                提供しています。
+            </p>
+        </div>
+        <div class="footerMenu-right">
+            <div class="footerMenu-sitemap">
+                <h3>サイトマップ</h3>
+                <p>
+                    <ul>
+                        <li><a href="./goods.html">商品一覧・協力店舗</a></li>
+                        <li><a href="./news.html">NEWS</a></li>
+                        <li><a href="./producer.html">生産者について</a></li>
+                        <li><a href="mailto:inoagrigarden@gmail.com">お問い合わせ</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="footerMenu-contact">
+                <h3>アクセス</h3>
+                <p>
+                    〒869-2402<br>
+                    熊本県阿蘇郡南小国町満願寺 7776<br>
+                    メール：ino.agrigarden@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footerPresents">2025 M.Ino</div>
+</footer>
+
 </body>
+
+<!--jQuery読み込み-->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    //開く処理定義
+    function openMenu(){
+        $('#humbergermenu-box').css('visibility', 'visible');
+    };
+    //隠す処理定義
+    function hidden(){
+        $('#humbergermenu-box').css('visibility', 'hidden');
+    };
+    //メニューボタンクリック
+    $('.menu-btn').click(function(){
+        openMenu();
+    })
+    //✕ボタンで消す
+    $('.back-btn').click(function(){
+        hidden();
+    });
+</script>
+
 </html>

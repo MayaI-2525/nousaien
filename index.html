@@ -2,111 +2,232 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <!--メディアクエリ-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"> <!--リセット-->
-    <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css"><!--リセット-->
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
     <!--フォント-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Klee+One:wght@400;600&family=Noto+Sans+Display:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
     <!--表示名-->
     <title>井野農菜園-TOP</title>
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "井野農菜園-TOP",
+      "alternateName": ["いののうさいえん", "InoAgrifarm", "inoagrifarm"],
+      "description": "熊本県南小国町で農業を営んでいます。",
+      "url" : "https://ino-agrigarden.com/",
+      "inLanguage": "ja"
+    }
+    </script>
 </head>
-<body>
-    <header>
-        <div class="headerback">
-            <div class="header-logo">
-                <h1><a href="#">井野農菜園</a></h1>
-            </div>
-            <div class="header-contents">
-                <p class="nowpage">
-                    <a href="./nousaien.html">TOP</a></p>
-                <p class="other">
-                    <a href="#news">NEWS</a></p>
-                <p class="other">
-                    <a href="begitable.html">商品</a></p>
-                <p class="other">
-                    <a href="./producer.html">生産者</a></p>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="main-page">
-            <div class="main-pagepic">
-                <h1>自然ゆたかな<br>
-                    阿蘇・南小国から<br>
-                    毎日の「おいしい」を<br>
-                    おとどけ
-                </h1>
-                <div class="buller"></div>
-            </div>
-        </div>
 
-        <div class="news-back">
-            <div class="circles"> <!--丸装飾-->
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-            </div>
-            <div class="news-around">
-                <h1 class="title" id="news">NEWS</h1>
-                <div class="underbar"></div>
-                <div class="news-box">
-
-                    <div class="news-contents">
-                        <div class="news-days">
-                            <p>12/24</p>
-                            <p>Thu</p>
-                        </div>
-                        <div class="news-pic">
-                            <img src="./image/kaizoku_mark.png">
-                        </div>
-                        <div class="news-title">
-                            <p>ガス打ち</p>
-                        </div>
-                    </div>
-
-                    <div class="news-contents">
-                        <div class="news-days">
-                            <p>11/6</p>
-                            <p>Wed</p>
-                        </div>
-                        <div class="news-pic">
-                            <img src="./image/kakebosi1.jpg">
-                        </div>
-                        <div class="news-title">
-                            <p>かけぼし米の精米完了</p>
-                        </div>
-                    </div>
-
-                    <div class="news-contents">
-                        <div class="news-days">
-                            <p>11/1</p>
-                            <p>?
-                            </p>
-                        </div>
-                        <div class="news-pic">
-                            <img src="./image/tomato_three - 編集済み.jpg">
-                        </div>
-                        <div class="news-title">
-                            <p>トマトの出荷終了</p>
-                        </div>
-                    </div>
-                    
+<body><!--ここから表示部分-->
+<div class="topVisual">
+    <div class="top-chatch">
+        <div class="circle-around">
+            <div class="circle-back">
+                <div class="circle-front">
+                    <p>あなたに、家族に、</p>
+                    <h1>おいしい</h1>
+                    <p>のしあわせをお届け</p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="toppage-wave"></div>
+</div>
 
-            <div class="circles"> <!--丸装飾-->
-                <div class="circle3"></div>
-                <div class="circle4"></div>
+<header>
+    <nav class="index-nav index-nav-700">
+        <div class="nav-left"> <!--　ナビゲーション左　-->
+            <div class="link-around">
+                <a href=".//goods.html" class="link">            
+                    <img src="./picture/illust/icon-tomato.png">
+                    <p>商品一覧</p>
+                </a>       
             </div>
+            <div class="link-around">
+                <a href="./news.html" class="link">
+                    <img src="./picture/illust/icon-news.png">
+                    <p>最新情報</p>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right"><!--　ナビゲーション右　-->
+            <div class="link-around">
+                <a href="./producer.html" class="link">
+                    <img src="./picture/illust/icon-scop.png">
+                    <p>生産者</p>
+                </a>
+            </div>
+            <div class="link-around">
+                <a href="#" class="link">
+                    <img src="./picture/illust/icon-mail.png">
+                    <p>お問い合わせ</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <a class="mainLogo" href="./index.html">
+        <div >
+            <img class="mainlogomark" src="./picture/illust/titlelogomark.png">
+            <img class="mainlogotext" src="./picture/illust/井野農菜園2_green.png">
+        </div>
+    </a>
+    
+</header>
 
+<main>
+    <div class="main-message">
+        <div class="mm-back">
+            <div class="mm-contents">
+                <div class="mm-message">
+                    <p>広大な自然が広がる阿蘇、南小国で作られる</p>
+                    <p>トマト・米・野菜苗</p>
+                    <p>この３つが井野農菜園を形成しています。</p>
+                </div>
+                <img class="mm-mount" src="./picture/illust/mounten.png">
+                <img class="mm-tomato" src="./picture/illust/tomatoillust.png">
+                <img class="mm-mini" src="./picture/illust/minitomatoillust.png">
+                <img class="mm-ine" src="./picture/illust/inahoillust.png">
+                <img class="mm-nouka" src="./picture/illust/nouka taue.png">
+            </div>
         </div>
-    </main>
-    <footer>
-        <div class="foot-contents">
-            <h1>2024 Maya Ino</h1>
+    </div>
+
+    <div class="syouhinnsyoukai">  <!--商品一覧-->
+        <div class="ss-around">
+            <a class="ss-box naebox"  href=".//goods.html#naefromtop">                                   
+                <p>野菜苗</p>                    
+            </a>
+            <a class="ss-box tomatobox" href=".//goods.html#tomatofromtop">
+                <p>完熟トマト</p>
+            </a>
+            <a class="ss-box misobox" href="./goods.html#misofromtop">
+                <p>完熟とまとみそ</p>
+            </a>
+            <a class="ss-box komebox" href="./goods.html#komefromtop">
+                <p>かけぼし米</p>
+            </a>
+            <a href="./goods.html"  class="ss-round">
+                <div>商品一覧</div>
+            </a>            
         </div>
-    </footer>
+    </div>
+
+    <div class="newspickup">  <!--最新情報-->
+        <div class="newsbackground-top"></div>
+        <div class="newspickup-main">
+            <div id="newspickup-main-deco">
+                <h1>最新情報</h1>
+                <img src="./picture/illust/news-ilust.png">
+                <a href="./news.html">ニュース一覧へ</a>
+            </div>
+            <div id="newspickup-main-content">
+                <section class="newslist">
+                2025/8/1
+                <h2>令和7年度トマト出荷</h2>
+                </section>
+                <section class="newslist">
+                2025/6/9
+                <h2>令和7年度野菜・花苗販売終了</h2>
+                </section>
+                <section class="newslist newslist-bottom">
+                2025/3/15
+                <h2>令和6年度分かけぼし米終了</h2>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="sns">
+        <h2>日々の作業や<br>
+            おしらせを発信中
+        </h2>
+        <section>
+            <div class="snss sns-inst">
+                <a class="link-deco" href="https://www.instagram.com/inoagrigarden?igsh=eHp1MXh6YWw1aWo1&utm_source=qr" target="_new">
+                    <div class="snss-link snss-inst-position">
+                        <img src="./picture/illust/nouka kuwa.png" target="_new">
+                        <p>Instagram</p>
+                    </div>
+                </a>
+            </div>
+            <div class="snss sns-face">
+                <a class="link-deco" href="https://www.facebook.com/share/1AVVEWLR87/?mibextid=wwXIfr">
+                    <div class="snss-link snss-face-position">
+                        <img src="./picture/illust/nouka taue.png">
+                        <p>Facebook</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="contactform">
+        <div class="contactform-around">
+            <h2>CONTACT</h2>
+            <div class="contactform-links">
+                <a href="#"  class="contactform-google formcustum">
+                    <div>                    
+                        <p>Googleフォーム</p>
+                        <span id="tobecontinued">準備中</span>                        
+                    </div>
+                </a>
+                <a href="mailto:inoagrigarden@gmail.com"  class="contactform-mail formcustum">
+                    <div>
+                        <p>メールにて<br>お問い合わせ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<!--ーーーーーーーーーー　フッター　ーーーーーーーーーー-->
+<footer>
+    <div class="footerMenu">
+        <div class="footerMenu-icon">
+            <img src="./picture/illust/titleLogo.png">
+            <p>
+                阿蘇南小国の山奥で代々農業を営んでいます。
+                みなさまの生活に色どりを添えられるような作物・商品を
+                提供しています。
+            </p>
+        </div>
+        <div class="footerMenu-right">
+            <div class="footerMenu-sitemap">
+                <h3>サイトマップ</h3>
+                <p>
+                    <ul>
+                        <li><a href="./goods.html">商品一覧・協力店舗</a></li>
+                        <li><a href="./news.html">NEWS</a></li>
+                        <li><a href="./producer.html">生産者について</a></li>
+                        <li><a href="mailto:inoagrigarden@gmail.com">お問い合わせ</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="footerMenu-contact">
+                <h3>アクセス</h3>
+                <p>
+                    〒869-2402<br>
+                    熊本県阿蘇郡南小国町満願寺 7776<br>
+                    メール：ino.agrigarden@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footerPresents">2025 M.Ino</div>
+</footer>
+
 </body>
 </html>

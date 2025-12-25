@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!--メディアクエリ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <!--フォント-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Klee+One:wght@400;600&family=Noto+Sans+Display:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
+    <!--表示名-->
+    <title>井野農菜園-NEWS</title>
+    <!-- Google 構造化データ-->
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "url" : "https://ino-agrigarden.com/"
+    }
+    </script>
+</head>
+
+<body><!--ここから表示部分-->
+
+<header>
+    <nav class="index-nav subpage-index-nav">
+        <div class="nav-left"> <!--　ナビゲーション左　-->
+            <div class="link-around">
+                <a href=".//goods.html" class="link">            
+                    <img src="./picture/illust/icon-tomato.png">
+                    <p>商品一覧</p>
+                </a>       
+            </div>
+            <div class="link-around">
+                <a href="./news.html" class="link">
+                    <img src="./picture/illust/icon-news.png">
+                    <p>最新情報</p>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right"><!--　ナビゲーション右　-->
+            <div class="link-around">
+                <a href="./producer.html" class="link">
+                    <img src="./picture/illust/icon-scop.png">
+                    <p>生産者</p>
+                </a>
+            </div>
+            <div class="link-around">
+                <a href="#" class="link">
+                    <img src="./picture/illust/icon-mail.png">
+                    <p>お問い合わせ</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <a class="mainLogo subpage-mainlogo" href="./index.html">
+        <div>
+            <img class="mainlogomark subpage-mainlogomark" src="./picture/illust/titlelogomark.png"><img class="mainlogotext subpage-mainlogotext" src="./picture/illust/井野農菜園2_green.png">
+        </div>
+    </a>
+
+    <!--７００px以下ハンバーガーメニュー-->
+    <button type="button" class="menu-btn">
+        <span class="menu-btn-line">    <span></span>   </span>
+    </button>
+    <nav id="humbergermenu-box">
+        <div>
+            <button type="button" class="back-btn">✕</button>
+        </div>
+        <a class="humberger_menu_list" href="./index.html">TOP</a>
+        <a class="humberger_menu_list" href="./goods.html">商品一覧</a>
+        <a class="humberger_menu_list" href="./news.html">最新情報</a>
+        <a class="humberger_menu_list" href="./producer.html">生産者</a>
+        <a class="humberger_menu_list list_last" href="#contact">お問い合わせ</a>
+    </nav>
+</header>
+
+<main>
+    <div class="subpage-wave"></div>
+
+    <div class="subpage-back">
+        <div class="newspage-around">
+            <p class="title">最新情報</p>
+            <div>
+                <article class="news-box-outside news-tomato" id="jumpfromtop"> <!--記事更新ここから↓-->
+                    <p class="news-box-ymd">2025/8/1</p>
+                    <div class="news-box-inside">
+                        <div class="news-textbox">
+                            <h3>令和7年度トマト出荷</h3>
+                            <p>
+                               今年もトマトが採れはじめました！<br>
+                               今までよりもやや遅めの出荷になりましたが、
+                               おいしさ・甘さは今年も十分です。<br>
+                               店頭で見かけた際にはどうぞご購入ください。
+                            </p>
+                        </div>
+                        <div class="news-imgbox">
+                            <img src="picture/newspicture/tomatozip.JPG">
+                        </div>                        
+                    </div>                    
+                </article>                              <!--記事更新ここまで↑-->
+
+                <article class="news-box-outside news-vegetable" id="news5fromtop"> <!--記事更新ここから↓-->
+                    <p class="news-box-ymd">2025/6/9</p>
+                    <div class="news-box-inside">
+                        <div class="news-textbox">
+                            <h3>令和7年度野菜・花苗販売終了</h3>
+                            <p>
+                               たくさんのご愛購ありがとうございました。また来年度分をお待ちください。<br>
+                               秋に向けた田植えも無事終了し、米の準備も万端です。
+                            </p>
+                        </div>
+                        <div class="news-imgbox">
+                            <img src="picture/newspicture/taue.JPG">
+                        </div>                        
+                    </div>                    
+                </article>                              <!--記事更新ここまで↑-->
+
+                <article class="news-box-outside news-rice" id="news4fromtop">
+                    <p class="news-box-ymd">2025/3/15</p>
+                    <div class="news-box-inside">
+                        <div class="news-textbox">
+                            <h3>令和6年度分かけぼし米終了</h3>
+                            <p>
+                                本日を持ちまして今年度分のかけぼし米は取り扱い終了になります。
+                            </p>
+                        </div>
+                        <div class="news-imgbox">
+                            <img src="./picture/kome_fukuro.jpg">
+                        </div>                        
+                    </div>                    
+                </article>
+
+                <article class="news-box-outside news-other" id="news3fromtop"> <!--記事更新ここから↓-->
+                    <p class="news-box-ymd">2025/1/1</p>
+                    <div class="news-box-inside">
+                        <div class="news-textbox">
+                            <h3>新年のご挨拶</h3>
+                            <p>
+                                あけましておめでとうございます。
+                                昨年は獣・人的被害等ありましたが、心を切り替えて
+                                今年度もみなさまにおいしさを届けられるよう尽力してまいります。
+                                今年も井野農菜園をよろしくお願いいたします。
+                            </p>
+                        </div>
+                        <div class="news-imgbox">
+                            <img src="./picture/illust/hebi.png">
+                        </div>                        
+                    </div>                    
+                </article>                              <!--記事更新ここまで↑-->
+                
+                <article class="news-box-outside news-other" id="news2fromtop"> <!--記事更新ここから↓-->
+                    <p class="news-box-ymd">2024/12/20</p>
+                    <div class="news-box-inside">
+                        <div class="news-textbox no-img">
+                            <h3>年度末のご挨拶</h3>
+                            <p>
+                                今年も井野農菜園を応援いただき誠にありがとうございます。<br>
+                                年末年始の営業は12/27までとなっております、ご了承ください。
+                            </p>
+                        </div>
+                        <!--
+                        <div class="news-imgbox">
+                            <img>
+                        </div>          -->                        
+                    </div>                    
+                </article>                              <!--記事更新ここまで↑-->
+
+                <article class="news-box-outside news-rice" id="news1fromtop"> <!--記事更新ここから↓-->
+                    <p class="news-box-ymd">2024/11/17</p>
+                    <div class="news-box-inside manypictures">
+                        <div class="news-textbox no-img">
+                            <h3>米フェス参加</h3>
+                            <p>
+                                今日は米フェスに参加しました。井野農菜園も昨年に引き続き２度目の出店をさせていただき、
+                                初めてのお客様からリピーターの方まで多くの方に購入していただくことができました。
+                                また少量ですが注力商品「とまとみそ」も購入いただけ、こちらもリピート頂けるよう周知出来たらと思います。
+                            </p>
+                        </div>
+                        <div class="news-imgbox imgbox-pictures">
+                            <img src="./picture/kome_kakebosi_toome.jpg">
+                            <img src="./picture/kome_kakebosisessya.jpg">
+                        </div>                        
+                    </div>                    
+                </article>                              <!--記事更新ここまで↑-->
+
+            </div>
+     </div>
+    </div>
+
+
+    <div class="contactform">
+        <div class="contactform-around">
+            <h2>CONTACT</h2>
+            <div class="contactform-links">
+                <a href="#"  class="contactform-google formcustum">
+                    <div>                    
+                        <p>Googleフォーム</p>                        
+                    </div>
+                </a>
+                <a href="mailto:inoagrigarden@gmail.com"  class="contactform-mail formcustum">
+                    <div>
+                        <p>メールにて<br>お問い合わせ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<!--ーーーーーーーーーー　フッター　ーーーーーーーーーー-->
+<footer>
+    <div class="footerMenu">
+        <div class="footerMenu-icon">
+            <img src="./picture/illust/titleLogo.png">
+            <p>
+                阿蘇南小国の山奥で代々農業を営んでいます。
+                みなさまの生活に色どりを添えられるような作物・商品を
+                提供しています。
+            </p>
+        </div>
+        <div class="footerMenu-right">
+            <div class="footerMenu-sitemap">
+                <h3>サイトマップ</h3>
+                <p>
+                    <ul>
+                        <li><a href="./goods.html">商品一覧・協力店舗</a></li>
+                        <li><a href="./news.html">NEWS</a></li>
+                        <li><a href="./producer.html">生産者について</a></li>
+                        <li><a href="mailto:inoagrigarden@gmail.com">お問い合わせ</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="footerMenu-contact">
+                <h3>アクセス</h3>
+                <p>
+                    〒869-2402<br>
+                    熊本県阿蘇郡南小国町満願寺 7776<br>
+                    メール：ino.agrigarden@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footerPresents">2025 M.Ino</div>
+</footer>
+
+<div class="pageupper"><p></p></div>
+
+</body>
+
+<!--jQuery読み込み-->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    //ページ遷移
+    $(function(){
+        $('body').fadeIn(800);
+    });
+
+    //開く処理定義
+    function openMenu(){
+        $('#humbergermenu-box').css('visibility', 'visible');
+    };
+    //隠す処理定義
+    function hidden(){
+        $('#humbergermenu-box').css('visibility', 'hidden');
+    };
+    //メニューボタンクリック
+    $('.menu-btn').click(function(){
+        openMenu();
+    })
+    //✕ボタンで消す
+    $('.back-btn').click(function(){
+        hidden();
+    });
+</script>
+</html>
